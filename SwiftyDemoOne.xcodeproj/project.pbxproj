@@ -14,6 +14,7 @@
 		0D1FD4FE2B91ABE40022215A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FD4FD2B91ABE40022215A /* ContentView.swift */; };
 		0D1FD5002B91ABE70022215A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1FD4FF2B91ABE70022215A /* Assets.xcassets */; };
 		0D1FD5032B91ABE70022215A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1FD5022B91ABE70022215A /* Preview Assets.xcassets */; };
+		0DA76B272B91B523009E6B26 /* SwiftyDemoOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA76B262B91B523009E6B26 /* SwiftyDemoOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		0D1FD4FF2B91ABE70022215A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D1FD5022B91ABE70022215A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D1FD5042B91ABE70022215A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DA76B262B91B523009E6B26 /* SwiftyDemoOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDemoOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				0D1FD4DC2B91AA270022215A /* SwiftyDemoOne.h */,
 				0D1FD4DD2B91AA270022215A /* Info.plist */,
+				0DA76B262B91B523009E6B26 /* SwiftyDemoOne.swift */,
 			);
 			path = SwiftyDemoOne;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				TargetAttributes = {
 					0D1FD4D82B91AA270022215A = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					0D1FD4E12B91AA280022215A = {
 						CreatedOnToolsVersion = 12.4;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA76B272B91B523009E6B26 /* SwiftyDemoOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +424,7 @@
 		0D1FD4EE2B91AA280022215A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -434,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bansi.SwiftyDemoOne;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +449,7 @@
 		0D1FD4EF2B91AA280022215A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -465,6 +473,7 @@
 		0D1FD4F12B91AA280022215A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyDemoOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +491,7 @@
 		0D1FD4F22B91AA280022215A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyDemoOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

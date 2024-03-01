@@ -9,7 +9,19 @@ import XCTest
 @testable import SwiftyDemoOne
 
 class SwiftyDemoOneTests: XCTestCase {
-
+    
+    var swiftyDemoOne : SwiftyDemoOne!
+    
+    override func setUp() {
+        swiftyDemoOne = SwiftyDemoOne()
+    }
+    func testAdd() {
+        XCTAssertEqual(swiftyDemoOne.add(a: 1, b: 1), 2)
+    }
+    func testSub() {
+            XCTAssertEqual(swiftyDemoOne.sub(a: 2, b: 1), 1)
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
