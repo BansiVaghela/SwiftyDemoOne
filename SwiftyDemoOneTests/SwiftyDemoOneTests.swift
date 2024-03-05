@@ -16,10 +16,10 @@ class SwiftyDemoOneTests: XCTestCase {
         swiftyDemoOne = SwiftyDemoOne()
     }
     func testAdd() {
-        XCTAssertEqual(swiftyDemoOne.add(a: 1, b: 1), 2)
+        XCTAssertEqual(SwiftyDemoOne.add(a: 1, b: 1), 2)
     }
     func testSub() {
-            XCTAssertEqual(swiftyDemoOne.sub(a: 2, b: 1), 1)
+            XCTAssertEqual(SwiftyDemoOne.sub(a: 2, b: 1), 1)
     }
     
     override func setUpWithError() throws {
