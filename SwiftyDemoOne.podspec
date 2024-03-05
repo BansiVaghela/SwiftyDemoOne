@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
 	This CocoaPods library helps you perform calculation.
                    DESC
   spec.homepage     = "https://github.com/BansiVaghela/SwiftyDemoOne"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Bansi Vaghela" => "bansi.vaghela@volansys.com" }
 
  
